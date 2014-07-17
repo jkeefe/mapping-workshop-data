@@ -2,9 +2,6 @@
 PINS: KINDERGARTENS WITH LONG WAITLISTS
 ......................................................
 
-==> BEGINNER to INTERMEDIATE
-==> Last used July 2015 (USC / Annenberg)
-==> Uses Fusion Tables
 ==> DATA SHORTLINK: http://jkef.me/mapping-workshop
 ==> FILES USED: waitlist-with-addresses.csv
         
@@ -76,9 +73,6 @@ Can also discuss Fusion Tables Wizard
 SHAPES: GERMAN ANCESTRY BY COUNTY
 ......................................................
 
-==> INTERMEDIATE
-==> Last used July 2015 (USC / Annenberg)
-==> Uses Fusion Tables
 ==> DATA SHORTLINK: http://jkef.me/mapping-workshop
 ==> FILES USED: german_ancestry.csv, us_counties.kml
 
@@ -170,9 +164,6 @@ Make it pretty (and interesting)
 POINTS IN POLYGONS: PRE-K FACILITIES IN NYC
 ......................................................
 
-==> INTERMEDIATE / ADVANCED
-==> Last used July 2015 (USC / Annenberg)
-==> Uses Carto DB
 ==> DATA SHORTLINK: http://jkef.me/mapping-workshop
 ==> FILES USED: prek_sites_seats_demo.csv, nynta.zip
 
