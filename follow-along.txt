@@ -1,0 +1,261 @@
+......................................................
+PINS: KINDERGARTENS WITH LONG WAITLISTS
+......................................................
+
+==> BEGINNER to INTERMEDIATE
+==> Last used July 2015 (USC / Annenberg)
+==> Uses Fusion Tables
+==> DATA SHORTLINK: http://jkef.me/mapping-workshop
+==> FILES USED: waitlist-with-addresses.csv
+        
+You'll need the files at: 
+http://jkef.me/map-workshop
+    (which points to https://github.com/jkeefe/mapping-workshop-data/archive/master.zip)
+
+Finished story:
+Lengthy Kindergarten Wait Lists Unveiled as Applicants Increase
+http://www.wnyc.org/articles/wnyc-news/2012/apr/06/kindergarten-applicants-continue-grow-another-year-long-waiting-lists/
+
+Original PDF we got from the Dept. of Education
+https://dl.dropbox.com/u/466610/K%20waitlist%20data_04.06.12.pdf
+
+Fusion tables version:
+https://www.google.com/fusiontables/DataSource?docid=1IOAuGpQkI5EIqIWBdPlMuyj7Hfog6vEnrf3JWe4
+
+Explain how I merged this with the school data to make what you're going to upload (my version here: https://www.google.com/fusiontables/DataSource?docid=1_kfeoB49t6713CERfIb4f4d_tFV-IkXDl1sJxuk
+
+    CSV from bundle: waitlist-with-addresses.csv
+
+    Upload the CSV to Google Fusion Tables
+    http://drive.google.com
+    -> Create
+    -> Fusion Table
+    -> Chose File
+    -> waitlist-with-addresses.csv
+    -> Next
+    -> Next
+    -> Finish
+
+    -> SHARE -> Anyone with link
+
+    Look at the columns: 
+    Yellow highlighting = Thinks it can geocode it
+
+    View on the Map
+    On Map Tab's name, Go to "Select Location ..." and change to "Full_Address" 
+
+    2 MINUTE GEOCODING BREAK!
+
+My final version: 
+https://www.google.com/fusiontables/DataSource?docid=1SrjF9IDNboev7Z0d3JeWST6okfOHab80iYvdrhc
+
+Style the pins to be different based on size of waitlist:
+Map -> Change Map Styles ...
+Marker Icon -> Buckets
+Divide into CUSTOM buckets
+Use + buttons to add rows here
+0 in first box, change pin color
+20 in second box, change pin color
+80 in thrid box, change pin color
+1000 (way beyond max of data) in bottom box.
+Screen shot here: http://cl.ly/3I1b1B2F302u2V280k44
+
+Style the popup window:
+Map -> Change Info Window Layout ...
+Can pick with checkboxes or click CUSTOM tab to play with html
+
+Icons:
+jkef.me/ft-icons
+
+Adding a legend ... 
+Click on Map tab -> Change Map Styles ... -> Automatic Legend
+Can also discuss Fusion Tables Wizard
+
+
+......................................................
+SHAPES: GERMAN ANCESTRY BY COUNTY
+......................................................
+
+==> INTERMEDIATE
+==> Last used July 2015 (USC / Annenberg)
+==> Uses Fusion Tables
+==> DATA SHORTLINK: http://jkef.me/mapping-workshop
+==> FILES USED: german_ancestry.csv, us_counties.kml
+
+Shapes + Data
+Married (or merged) on the FIPS code
+    (Federal Information Processing Standards)
+    Counties and County-like Subdivisions
+
+Upload data to Google Fusion Tables
+
+    CSV from bundle: wgerman_ancestry.csv
+
+    Upload the CSV to Google Fusion Tables
+    http://drive.google.com
+    -> Create
+    -> Fusion Table
+    -> Chose File
+    -> german_ancestry.csv
+    -> Next
+    -> Next
+    -> Finish
+    
+OK! Now we need the county SHAPES.
+    - Also can get from census
+    - I have a shapefile for you in the bundle under us_counties.zip
+    - But WAIT!
+    
+    Quick digression about SHP vs KML
+        - Difference between the two
+        - Can convert one to the other using 
+            cartodb.com (upload as SHP in a zip file, Export as KML)
+            shpescape.com (slower, but drops it right into Fusion Table)
+
+    I've given you a converted file as us_counties.kml
+        - You can upload it, like you did the CSV (Fusion tables accept KML files)
+        - BUT WAIT! I've already done that, too
+        - I uploaded it and then made it public using "Share"
+        - Open a new tab and view it at http://jkef.me/us-map-ft
+        - Click on "Map of Geometry" tab
+        
+Let's put them together!
+
+    - Be on the ancestry data
+    - File -> Merge
+    - Go copy the URL from the map and come back
+    - Paste it into the thin box at the bottom
+    - Next
+    - Need to tell Fusion Tables what data columns should be matched
+        use these:
+            "id2"
+            "fips"
+    - Next
+    - Merge
+    - Click on the link for the new table
+    - See the merged data!
+    - Go to "Map of Geometry" tab
+    - Don't freak out if you see dots instead of counties (like I did) just zoom in a click or two
+    
+Make it pretty (and interesting)
+
+    - "Map of Geometry" -> Change map
+    - New column on the left side (may have already been open)
+    - Feature Map -> Change feature styles...
+    - Polygons -> Fill Color -> Buckets
+    - Divide into 5 buckets
+    - Column: pct_german
+    - Click: Use this range
+    
+    - Go back to try the gradient
+    - Feature Map -> Change feature styles...
+      (I like to make the opacities 100% to demo)
+     
+    - Add a legend
+    - Feature Map -> Change feature styles... -> Legend -> Automatic legend
+    
+    - Fix the info window
+    
+    - Share it!
+        Share -> Make it public
+        ALSO:
+        "Map of Geometry" -> Publish ...
+            Gives you
+                link
+                embed code
+                html & javascript
+      
+    
+......................................................
+POINTS IN POLYGONS: PRE-K FACILITIES IN NYC
+......................................................
+
+==> INTERMEDIATE / ADVANCED
+==> Last used July 2015 (USC / Annenberg)
+==> Uses Carto DB
+==> DATA SHORTLINK: http://jkef.me/mapping-workshop
+==> FILES USED: prek_sites_seats_demo.csv, nynta.zip
+
+    Challenge: Determine Pre-K availability, by NYC neighborhood
+
+    Upload List of Pre-K spots
+        - We'll be using prek_sites_seats_demo.csv
+        
+        - First we geocoded all of the addresses to get lat/lons
+            Can do on Google, if you're making a Google Map
+            I like http://www.gpsvisualizer.com/geocoder/
+            Also http://batchgeo.com/
+            Cartodb.com also has a service (I haven't tried)
+        
+        - Log into cartodb.com
+        - Drag/drop file onto dashboard to upload
+            
+        Note that CartoDB detects a lat-lon column and makes points!
+            If it doesn't, use the "Georeference" option ...
+            Can also do addresses, for a fee
+    
+    Upload Neighborhood
+        - This is the nynta.zip file
+        - It's NYC neighbhorhoods, and they're made up of census tracts
+        
+        - Got this from NYC.gov:
+            http://www.nyc.gov/html/dcp/html/bytes/applbyte.shtml#other
+            
+        - Note: This data (and almost all nyc data) is NOT in latitude & longitude
+        - It's in another projection called the New York - Long Island State Plane Coordinate System (feet)
+        - CartoDB fixes that on upload
+        - Upload by dragging nynta.zip to your carto.db dashboard
+    
+    Count Location Points in Polygons
+        Open the neighborhoods file
+        Click map view
+        "Options" button at the top
+        "Merge Tables ..."
+        "Spatial Join"
+        Pick the prek_sites_seats_demo table
+        Pick "Count"
+        Click "Merge Tables"
+        Rename it something useful
+        Map view
+        "Paintbrush" wizard on the right
+        Chloropleth
+        Pick the intersect_count column
+
+    Count *Seats* in Polygons
+        First need to set seats as a number
+        Back to neighborhood file
+        "Options"
+        "Merge"
+        "Spatial Join"
+        Pick the table
+        Pick "SUM"
+        Pick full_day_seats
+        "Merge Tables"
+        Rename it something useful
+        Map view
+        "Paintbrush" wizard on the right
+        Chloropleth
+        Pick the intersect_count column
+        
+    Make the tooltips nicer
+        Click on a shape
+        Click link to set the columns to show
+        Pick the ntaname
+        Pick the seats
+        Change color if you want
+        
+    Share it
+        "Visualize" button
+        Give it a name
+        Now the "Share" button
+        Can share the public URL or the embed URL
+        Can embed on a site with the Embed code (tho will cost once it goes over limit)
+        
+        Back to the table view:
+        * Rename the column "seats"
+        * Can Download
+    
+    We took the extra step to compare these numbers census data to estimate how many 4-year-olds were in each neighborhood. The 2010 decennial census has single-age breakdowns all the way to block level. We used the tract-level data for the number of 1-year-olds in 2010 to determine the number of 5 year old
+    
+    Our story:
+    http://www.wnyc.org/story/map-pre-k-expands-some-neighborhoods-fair-better-others/
