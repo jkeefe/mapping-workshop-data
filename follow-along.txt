@@ -68,6 +68,15 @@ Adding a legend ...
 Click on Map tab -> Change Map Styles ... -> Automatic Legend
 Can also discuss Fusion Tables Wizard
 
+......................................................
+SHAPES: CALIFORNIA ENVIROSCAN DATA
+......................................................
+
+==> DATA SHORTLINK: http://bit.ly/mapping-workshop
+
+
+California Tracts: http://bit.ly/ca-tracts 
+California EnviroScreen Data: http://bit.ly/ca-enviro
 
 ......................................................
 SHAPES: GERMAN ANCESTRY BY COUNTY
