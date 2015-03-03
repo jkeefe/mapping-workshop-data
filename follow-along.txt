@@ -83,6 +83,8 @@ Married (or merged) on the census's GEOID code for each tract
 Upload data to Google Fusion Tables
 
     CSV from mapping-workshop bundle: CalEnviroScreenOct2014.csv
+    
+    (The Excel file is also in the bundle. This is a CSV for the first sheet only)
 
     Upload the CSV to Google Fusion Tables
     http://drive.google.com
@@ -94,9 +96,11 @@ Upload data to Google Fusion Tables
     -> Next
     -> Finish
     
+    -> PRE-COOKED! I've already uploaded this for you at: http://bit.ly/ca-enviro
+    -> I then made it public using the "Share" button
+    
 OK! Now we need the tract SHAPES.
     - Can get from census: https://www.census.gov/cgi-bin/geo/shapefiles2014/main
-    - I have a shapefile for you in the bundle under us_counties.zip
     - But WAIT!
     
     Quick digression about SHP vs KML
@@ -105,30 +109,31 @@ OK! Now we need the tract SHAPES.
             cartodb.com (upload as SHP in a zip file, Export as KML)
             shpescape.com (slower, but drops it right into Fusion Table)
 
-    I've given you a converted file as us_counties.kml
+    I've given you a converted file as california_tracts_simplified.kml
         - You can upload it, like you did the CSV (Fusion tables accept KML files)
-        - BUT WAIT! I've already done that, too
+        - BUT WAIT! I've already done that
         - I uploaded it and then made it public using "Share"
-        - Open a new tab and view it at http://jkef.me/us-map-ft
+        - Open a new tab and view it at http://bit.ly/ca-tracts 
         - Click on "Map of Geometry" tab
         
 Let's put them together!
 
-    - Be on the ancestry data
+    - Go to the Enviro Data table
     - File -> Merge
-    - Go copy the URL from the map and come back
-    - Paste it into the thin box at the bottom
+    - Go to the Tract map
+    - Copy the full URL of the tract map
+    - Go back to the Enviro Data
+    - Paste that URL into the thin box at the bottom
     - Next
     - Need to tell Fusion Tables what data columns should be matched
-        use these:
-            "id2"
-            "fips"
+        use the "Cenusus Tract" column from the enviro table
+        use the "geoid" column from the tract table
     - Next
     - Merge
     - Click on the link for the new table
     - See the merged data!
     - Go to "Map of Geometry" tab
-    - Don't freak out if you see dots instead of counties (like I did) just zoom in a click or two
+    - Don't freak out if you see dots instead of shapes or missing shapes ... just zoom in a level or two
     
 Make it pretty (and interesting)
 
@@ -137,7 +142,7 @@ Make it pretty (and interesting)
     - Feature Map -> Change feature styles...
     - Polygons -> Fill Color -> Buckets
     - Divide into 5 buckets
-    - Column: pct_german
+    - Column: "Athsma Pctl"
     - Click: Use this range
     
     - Go back to try the gradient
@@ -158,7 +163,8 @@ Make it pretty (and interesting)
                 embed code
                 html & javascript
       
-
+    - Advanced styling:
+        Use the Style wizard at: http://bit.ly/ft-wizard
 
 
 ......................................................
