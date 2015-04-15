@@ -7,19 +7,40 @@ PINS: KINDERGARTENS WITH LONG WAITLISTS
         
 You'll need the files at: 
 http://jkef.me/map-workshop
-    (which points to https://github.com/jkeefe/mapping-workshop-data/archive/master.zip)
+(which points to https://github.com/jkeefe/mapping-workshop-data/archive/master.zip)
 
 Finished story:
 Lengthy Kindergarten Wait Lists Unveiled as Applicants Increase
 http://www.wnyc.org/articles/wnyc-news/2012/apr/06/kindergarten-applicants-continue-grow-another-year-long-waiting-lists/
 
-Original PDF we got from the Dept. of Education
-https://dl.dropbox.com/u/466610/K%20waitlist%20data_04.06.12.pdf
+Waitlist data:
 
-Fusion tables version:
-https://www.google.com/fusiontables/DataSource?docid=1IOAuGpQkI5EIqIWBdPlMuyj7Hfog6vEnrf3JWe4
+  Original PDF we got from the Dept. of Education
+  https://dl.dropbox.com/u/466610/K%20waitlist%20data_04.06.12.pdf
 
-Explain how I merged this with the school data to make what you're going to upload (my version here: https://www.google.com/fusiontables/DataSource?docid=1_kfeoB49t6713CERfIb4f4d_tFV-IkXDl1sJxuk
+  CSV version:
+  https://github.com/jkeefe/mapping-workshop-data/blob/master/kindergarten-waitlist.csv
+
+  Fusion tables version:
+  https://www.google.com/fusiontables/DataSource?docid=1IOAuGpQkI5EIqIWBdPlMuyj7Hfog6vEnrf3JWe4
+
+School Name & Address Data:
+
+  Got it from here:
+  http://schools.nyc.gov/Offices/EnterpriseOperations/DIIT/OOD/default.htm
+
+  Pared down version (by me):
+  https://github.com/jkeefe/mapping-workshop-data/blob/master/NYCSchoolData.csv
+  
+  Fusion Table:
+  https://www.google.com/fusiontables/data?docid=1Fg3AE9ziR0U5kQHUFlIdYww8nUDtLj58buuIqpo#rows:id=1
+  
+
+Merged this into:
+  https://www.google.com/fusiontables/DataSource?docid=1_kfeoB49t6713CERfIb4f4d_tFV-IkXDl1sJxuk
+
+
+
 
     CSV from bundle: waitlist-with-addresses.csv
 
