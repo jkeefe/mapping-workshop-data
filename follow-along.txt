@@ -274,7 +274,7 @@ POINTS IN POLYGONS: PRE-K FACILITIES IN NYC
             Can do on Google, if you're making a Google Map
             I like http://www.gpsvisualizer.com/geocoder/
             Also http://batchgeo.com/
-            Cartodb.com also has a service (I haven't tried)
+            Cartodb.com also has a service
         
         - Log into cartodb.com
         - Drag/drop file onto dashboard to upload
