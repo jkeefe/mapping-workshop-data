@@ -1,5 +1,5 @@
 # Mapping Pins: Kindergartens With Long Waitlists
-====================
+---
 
 - DATA SHORTLINK: http://jkef.me/mapping-workshop
 - FILES USED: waitlist-with-addresses.csv
@@ -13,17 +13,13 @@ Finished story: [Lengthy Kindergarten Wait Lists Unveiled as Applicants Increase
 ### Waitlist data
 
 - [Original PDF we got from the Dept. of Education](https://dl.dropbox.com/u/466610/K%20waitlist%20data_04.06.12.pdf)
-
 - [CSV version](https://github.com/jkeefe/mapping-workshop-data/blob/master/kindergarten-waitlist.csv)
-
 - [Fusion tables version](https://www.google.com/fusiontables/DataSource?docid=1IOAuGpQkI5EIqIWBdPlMuyj7Hfog6vEnrf3JWe4)
 
 ### School Name & Address Data
 
 - Got it from [here](http://schools.nyc.gov/Offices/EnterpriseOperations/DIIT/OOD/default.htm)
-
 - [Pared down version (by me)](https://github.com/jkeefe/mapping-workshop-data/blob/master/LCGMS_SchoolData_EDITED.csv)
-
 - [Fusion Table](https://www.google.com/fusiontables/data?docid=1Fg3AE9ziR0U5kQHUFlIdYww8nUDtLj58buuIqpo#rows:id=1)
   
 ### Merged this on the School ID
@@ -58,7 +54,7 @@ On Map Tab's name, Go to "Select Location ..." and change to "Full_Address"
 
 My final version is [here, for comparison](https://www.google.com/fusiontables/DataSource?docid=1SrjF9IDNboev7Z0d3JeWST6okfOHab80iYvdrhc)
 
-### Style the pins to be different based on size of waitlist:
+### Style the pins to be different based on size of waitlist
 
 - Map -> Change Map Styles ...
 - Marker Icon -> Buckets
@@ -70,12 +66,12 @@ My final version is [here, for comparison](https://www.google.com/fusiontables/D
 - 1000 (way beyond max of data) in bottom box.
 - Screen shot here: http://cl.ly/3I1b1B2F302u2V280k44
 
-### Style the popup window:
+### Style the popup window
 
 - Map -> Change Info Window Layout ...
 - Can pick with checkboxes or click CUSTOM tab to play with html
 
-Icons: [jkef.me/ft-icons](jkef.me/ft-icons)
+[Other Fusion Table icons are here](https://www.google.com/fusiontables/DataSource?dsrcid=308519#map:id=3).
 
 Adding a legend ... 
 
