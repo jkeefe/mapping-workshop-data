@@ -1,5 +1,4 @@
 # Mapping Pins: Kindergartens With Long Waitlists
----
 
 - DATA SHORTLINK: http://jkef.me/mapping-workshop
 - FILES USED: waitlist-with-addresses.csv
@@ -78,25 +77,25 @@ Adding a legend ...
 - Click on Map tab -> Change Map Styles ... -> Automatic Legend
 - Can also discuss Fusion Tables Wizard
 
-......................................................
-SHAPES: CALIFORNIA ENVIROSCAN DATA BY TRACT
-......................................................
+#Mapping Shapes: California Enviroscan Data by Tract
 
-==> DATA SHORTLINK: http://bit.ly/mapping-workshop
+- DATA SHORTLINK: http://bit.ly/mapping-workshop
 
-California Tracts: http://bit.ly/ca-tracts 
-California EnviroScreen Data: http://bit.ly/ca-enviro
+- California Tracts: [http://bit.ly/ca-tracts](http://bit.ly/ca-tracts) 
+- California EnviroScreen Data: [http://bit.ly/ca-enviro](http://bit.ly/ca-enviro)
 
-Shapes + Data
-Married (or merged) on the census's GEOID code for each tract
+## Combinding Shapes + Data
 
-Upload data to Google Fusion Tables
+- Married (or merged) on the census's GEOID code for each tract
 
-    CSV from mapping-workshop bundle: CalEnviroScreenOct2014.csv
-    
-    (The Excel file is also in the bundle. This is a CSV for the first sheet only)
+- Upload data to Google Fusion Tables
 
-    Upload the CSV to Google Fusion Tables
+- CSV from mapping-workshop bundle: CalEnviroScreenOct2014.csv (The Excel file is also in the bundle. This is a CSV for the first sheet only)
+
+### Upload the CSV to Google Fusion Tables
+
+Follow these steps:
+
     http://drive.google.com
     -> Create
     -> Fusion Table
@@ -106,8 +105,9 @@ Upload data to Google Fusion Tables
     -> Next
     -> Finish
     
-    -> PRE-COOKED! I've already uploaded this for you at: http://bit.ly/ca-enviro
-    -> I then made it public using the "Share" button
+### Pre-Cooked Version!
+
+I've already uploaded this for you at: [http://bit.ly/ca-enviro](http://bit.ly/ca-enviro). I then made it public using the "Share" button
     
 OK! Now we need the tract SHAPES.
     - Can get from census: https://www.census.gov/cgi-bin/geo/shapefiles2014/main
