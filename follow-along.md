@@ -1,15 +1,16 @@
-## PINS: KINDERGARTENS WITH LONG WAITLISTS
+# Mapping Pins: Kindergartens With Long Waitlists
+====================
 
-==> DATA SHORTLINK: http://jkef.me/mapping-workshop
-==> FILES USED: waitlist-with-addresses.csv
+- DATA SHORTLINK: http://jkef.me/mapping-workshop
+- FILES USED: waitlist-with-addresses.csv
         
-For doing this locally, you'll need the files at: 
-[http://jkef.me/map-workshop](http://jkef.me/map-workshop)
-(which points to [https://github.com/jkeefe/mapping-workshop-data/archive/master.zip](https://github.com/jkeefe/mapping-workshop-data/archive/master.zip))
+For doing this locally, you'll need the files at: [http://jkef.me/map-workshop](http://jkef.me/map-workshop), (which points to [https://github.com/jkeefe/mapping-workshop-data/archive/master.zip](https://github.com/jkeefe/mapping-workshop-data/archive/master.zip))
 
 Finished story: [Lengthy Kindergarten Wait Lists Unveiled as Applicants Increase](http://www.wnyc.org/articles/wnyc-news/2012/apr/06/kindergarten-applicants-continue-grow-another-year-long-waiting-lists/)
 
-### Waitlist data:
+## Data Sourcing & Merging
+
+### Waitlist data
 
 - [Original PDF we got from the Dept. of Education](https://dl.dropbox.com/u/466610/K%20waitlist%20data_04.06.12.pdf)
 
@@ -17,7 +18,7 @@ Finished story: [Lengthy Kindergarten Wait Lists Unveiled as Applicants Increase
 
 - [Fusion tables version](https://www.google.com/fusiontables/DataSource?docid=1IOAuGpQkI5EIqIWBdPlMuyj7Hfog6vEnrf3JWe4)
 
-### School Name & Address Data:
+### School Name & Address Data
 
 - Got it from [here](http://schools.nyc.gov/Offices/EnterpriseOperations/DIIT/OOD/default.htm)
 
@@ -25,15 +26,19 @@ Finished story: [Lengthy Kindergarten Wait Lists Unveiled as Applicants Increase
 
 - [Fusion Table](https://www.google.com/fusiontables/data?docid=1Fg3AE9ziR0U5kQHUFlIdYww8nUDtLj58buuIqpo#rows:id=1)
   
-Merged this on the School ID. 
+### Merged this on the School ID
 
 - [Here's the merged table](https://www.google.com/fusiontables/DataSource?docid=1_kfeoB49t6713CERfIb4f4d_tFV-IkXDl1sJxuk)
 
+## Map It With Prebaked Files
 
-    CSV from bundle: waitlist-with-addresses.csv
+With the data sets above, I've merged the waitlist info and the schools, to make the pre-baked `waitlist-with-addresses.csv` -- which is in the bundle or available [here](https://github.com/jkeefe/mapping-workshop-data/blob/master/waitlist-with-addresses.csv).
 
-    Upload the CSV to Google Fusion Tables
-    http://drive.google.com
+Upload the CSV to Google Fusion Tables
+http://drive.google.com
+
+Then follow these steps:
+
     -> Create
     -> Fusion Table
     -> Chose File
@@ -41,21 +46,20 @@ Merged this on the School ID.
     -> Next
     -> Next
     -> Finish
-
     -> SHARE -> Anyone with link
 
-    Look at the columns: 
-    Yellow highlighting = Thinks it can geocode it
+Look at the columns: Yellow highlighting = Thinks it can geocode it
 
-    View on the Map
-    On Map Tab's name, Go to "Select Location ..." and change to "Full_Address" 
+### View the Map
 
-    2 MINUTE GEOCODING BREAK!
+On Map Tab's name, Go to "Select Location ..." and change to "Full_Address" 
 
-My final version: 
-https://www.google.com/fusiontables/DataSource?docid=1SrjF9IDNboev7Z0d3JeWST6okfOHab80iYvdrhc
+2 MINUTE GEOCODING BREAK!
 
-- Style the pins to be different based on size of waitlist:
+My final version is [here, for comparison](https://www.google.com/fusiontables/DataSource?docid=1SrjF9IDNboev7Z0d3JeWST6okfOHab80iYvdrhc)
+
+### Style the pins to be different based on size of waitlist:
+
 - Map -> Change Map Styles ...
 - Marker Icon -> Buckets
 - Divide into CUSTOM buckets
@@ -66,7 +70,7 @@ https://www.google.com/fusiontables/DataSource?docid=1SrjF9IDNboev7Z0d3JeWST6okf
 - 1000 (way beyond max of data) in bottom box.
 - Screen shot here: http://cl.ly/3I1b1B2F302u2V280k44
 
-Style the popup window:
+### Style the popup window:
 
 - Map -> Change Info Window Layout ...
 - Can pick with checkboxes or click CUSTOM tab to play with html
