@@ -3,7 +3,7 @@
 - DATA SHORTLINK: http://jkef.me/mapping-workshop
 - FILES USED: waitlist-with-addresses.csv
         
-For doing this locally, you'll need the files at: [http://jkef.me/map-workshop](http://jkef.me/map-workshop), (which points to [https://github.com/jkeefe/mapping-workshop-data/archive/master.zip](https://github.com/jkeefe/mapping-workshop-data/archive/master.zip))
+For doing this locally, you'll need the files at: [http://jkef.me/map-workshop](http://jkef.me/map-workshop), (which points to [here](https://github.com/jkeefe/mapping-workshop-data/archive/master.zip))
 
 Finished story: [Lengthy Kindergarten Wait Lists Unveiled as Applicants Increase](http://www.wnyc.org/articles/wnyc-news/2012/apr/06/kindergarten-applicants-continue-grow-another-year-long-waiting-lists/)
 
